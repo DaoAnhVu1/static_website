@@ -51,21 +51,33 @@
 
 #blog-card-container .card .blog-description {
     flex-direction: column;
-    overflow: auto;
     padding: 2rem;
+    padding-top: 0;
+}
+
+.blog-title-container {
+    height: 10rem;
+}
+
+.blog-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: initial;
+    opacity: 0.9;
 }
 
 #blog-card-container .card .blog-description h2 {
+    padding: 1rem;
     font-size: 2.2rem;
 }
 
-@media only screen and (max-width: 1000px)  {
+@media only screen and (max-width: 1268px)  {
     #blog-card-container {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media only screen and (max-width: 500px)  {
+@media only screen and (max-width: 768px)  {
     #blog-card-container {
         grid-template-columns: 1fr ;
     }
